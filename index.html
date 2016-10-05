@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+		<title>blog.jmanson.fr - Le Blog de Jeremy</title>
+		<link rel="alternate" type="application/rss+xml" title="Fil Rss des articles" href="https://blog.jmanson.fr/feed.php?rss" />
+		<link rel="stylesheet" media="screen" type="text/css" title="index" href="style.css" />
+	</head>
+
+	<body>
+
+
+		<header>
+
+			<div id="logo"><img src="logo.png" alt="jmanson"></div>
+
+			<nav class="navserv">
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Git</a></li>
+					<li><a href="#">Wiki</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="navsite">
+				<ul id="menu_horizontal">
+					<li>Accueil</a></li>
+					<li>Windows</a></li>
+					<li>Linux</a></li>
+					<li>Recherche</a></li>
+					<li>Administration</a></li>
+					<li>RSS</a></li>
+				</ul>
+			</nav>
+
+		</hearder>
+
+
+		<section>
+			
+			<article>
+				<img class="art_thumbnail" src="https://blog.jmanson.fr/data/medias/illustrations/virtualbox.jpg" alt="illustration" title="" />
+				<h1><a class="titre_articles" href="https://blog.jmanson.fr/index.php?article1/impossible-de-compiler-les-guest-additions-et-les-drivers-videos-de-virtualbox-sous-gentoo" title="Impossible de compiler les guest additions et les drivers vidéos de virtualbox sous Gentoo">Impossible de compiler les guest additions et les drivers vidéos de virtualbox sous Gentoo</a></h1>
+				<small>Rédigé par jeremy - <time datetime="2015-09-19">19 septembre 2015</time> - <a href="https://blog.jmanson.fr/index.php?article1/impossible-de-compiler-les-guest-additions-et-les-drivers-videos-de-virtualbox-sous-gentoo#comments" title="0 Aucun commentaire">Aucun commentaire</a></small>
+				<p>Je voulais me faire une VM sous gentoo quand je m’aperçois à la fin de l’installation que, ni les drivers vidéos, ni les Guest Additions ne sont possible à compiler.</p>
+				<p>On remarque des erreurs de ce type :</p>
+				<p>Il semble qu’il manque une fonction … après recherche j’ai trouvé que cette erreur était due à l’utilisation de GCC-4.8.</p>
+				<p>Il faut donc passer à GCC-4.9, je regarde donc quelle version est disponible grâce à eix :</p>
+				<p>Je remarque que la version 4.8.2 est bloquer par Keyword, je déblock donc cette version :</p>
+				<p>Apres une longue attente, gcc devrais etre installé reste à selectionner le nouveau compilateur :</p>
+				<p>On liste les versions de GCC installé</p>
+				<p>On sélectionne la bonne version</p>
+				<p>En listant une nouvelle fois, on appertisation que le bon profile est sélectionné.</p>
+				<p>Nous pouvons maintenant installer les Guest additions de virtualbox !</p>
+				<p>Pour supprimer la version innutiliser de GCC, je vous avous que je prefere recompiler tout le système, je ne sais pas si c’est obligatioire mais c’est fortement recommander avant de lancer la commande de néttoyage des dépandances.</p>
+				<p>Apres une (treeees) longue attente le système est entierement recompilé, on peut donc nettoyer les dépendances orpheline.</p>
+				<p>&nbsp;</p>
+					Classé dans : <a class="noactive" href="https://blog.jmanson.fr/index.php?categorie1/linux" title="Linux">Linux</a> -
+					Mots clés : <a class="noactive" href="https://blog.jmanson.fr/index.php?tag/bash" title="bash">bash</a>, <a class="noactive" href="https://blog.jmanson.fr/index.php?tag/bug" title="bug">bug</a>, <a class="noactive" href="https://blog.jmanson.fr/index.php?tag/gentoo" title="Gentoo">Gentoo</a>, <a class="noactive" href="https://blog.jmanson.fr/index.php?tag/linux" title="linux">linux</a>, <a class="noactive" href="https://blog.jmanson.fr/index.php?tag/portage" title="portage">portage</a>, <a class="noactive" href="https://blog.jmanson.fr/index.php?tag/virtualbox" title="virtualbox">virtualbox</a>					</small>
+			</article>
+			
+			<nav class="nav_pages">
+				<span>page 1 sur 2</span>&nbsp;<span><a href="https://blog.jmanson.fr/index.php?page2" title="page suivante">suivante</a></span>			
+			</nav>
+
+
+		</section>
+
+		
+		<aside>
+		
+			<h3>Derniers articles</h3>
+			<ul class="lastart-list unstyled-list">
+				<li><a class="noactive" href="https://blog.jmanson.fr/index.php?article1/impossible-de-compiler-les-guest-additions-et-les-drivers-videos-de-virtualbox-sous-gentoo" title="Impossible de compiler les guest additions et les drivers vidéos de virtualbox sous Gentoo">Impossible de compiler les guest additions et les drivers vidéos de virtualbox sous Gentoo</a></li>
+				<li><a class="noactive" href="https://blog.jmanson.fr/index.php?article2/yunohost-lauto-hebergement-en-quelques-click" title="Yunohost : l’auto-hébergement en quelques Click">Yunohost : l’auto-hébergement en quelques Click</a></li>
+				<li><a class="noactive" href="https://blog.jmanson.fr/index.php?article3/nouvel-article" title="Un script bash qui synchronise chaque jour portage">Un script bash qui synchronise chaque jour portage</a></li>
+				<li><a class="noactive" href="https://blog.jmanson.fr/index.php?article4/bug-mate-ouvre-sa-session-avec-une-disaine-de-fenetres-x-caja-desktop" title="Bug : Mate ouvre sa session avec une disaine de fenetres « x-caja-desktop »">Bug : Mate ouvre sa session avec une disaine de fenetres « x-caja-desktop »</a></li>
+				<li><a class="noactive" href="https://blog.jmanson.fr/index.php?article7/supprimer-des-peripheriques-en-masse-sous-windows" title="Supprimer des périphériques en masse sous windows">Supprimer des périphériques en masse sous windows</a></li>
+			</ul>
+
+			<h3>Mots clés</h3>
+			<ul class="tag-list">
+				<li class="tag tag-size-3"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/bash" title="bash">bash</a></li>
+				<li class="tag tag-size-3"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/bug" title="bug">bug</a></li>
+				<li class="tag tag-size-5"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/gentoo" title="Gentoo">Gentoo</a></li>
+				<li class="tag tag-size-4"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/linux" title="linux">linux</a></li>
+				<li class="tag tag-size-2"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/portage" title="portage">portage</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/virtualbox" title="virtualbox">virtualbox</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/auto-hebergement" title="auto-hébergement">auto-hébergement</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/mail" title="mail">mail</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/nouveau-serveur" title="nouveau serveur">nouveau serveur</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/server" title="server">server</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/serveur" title="serveur">serveur</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/web" title="web">web</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/yunohost" title="yunohost">yunohost</a></li>
+				<li class="tag tag-size-2"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/auto" title="auto">auto</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/cron" title="cron">cron</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/notification" title="notification">notification</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/update" title="update">update</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/gnome" title="gnome">gnome</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/mate" title="mate">mate</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/x-caja-desktop" title="X-CAJA-DESKTOP">X-CAJA-DESKTOP</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/nettoyage" title="nettoyage">nettoyage</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/maintenance" title="maintenance">maintenance</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/qemu" title="qemu">qemu</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/raspberry-pi" title="raspberry PI">raspberry PI</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/rpi" title="rpi">rpi</a></li>
+				<li class="tag tag-size-2"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/windows" title="windows">windows</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/emulation" title="emulation">emulation</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/suppression" title="suppression">suppression</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/peripheriques" title="périphériques">périphériques</a></li>
+				<li class="tag tag-size-1"><a class="noactive" href="https://blog.jmanson.fr/index.php?tag/masse" title="masse">masse</a></li>		
+			</ul>
+
+
+			<h3>Archives</h3>
+			<ul class="arch-list unstyled-list">
+				<li id="archives-2015"><a class="noactive" href="https://blog.jmanson.fr/index.php?archives/2015" title="2015">2015</a> (1)</li>
+				<li id="archives-2014"><a class="noactive" href="https://blog.jmanson.fr/index.php?archives/2014" title="2014">2014</a> (5)</li>
+				<li id="archives-2013"><a class="noactive" href="https://blog.jmanson.fr/index.php?archives/2013" title="2013">2013</a> (1)</li>
+			</ul>
+
+
+		</aside>
+
+
+
+		<footer>
+			
+			<p>
+			&copy; 2016 <a class="maintitle" href="https://blog.jmanson.fr/" title="blog.jmanson.fr">blog.jmanson.fr</a> - 
+			Le Blog de Jeremy - Généré par&nbsp;<a href="http://www.pluxml.org" title="Blog ou Cms sans base de données">PluXml</a>
+			en&nbsp;0.019s&nbsp; Compression GZIP activée
+			</p>
+
+		</footer>
+
+	</body>
+
+</html>
