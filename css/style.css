@@ -4,7 +4,11 @@
   margin-right: auto;
   width: 317px;
 	}
-
+	
+.menu_img{
+	width: 32px;
+	}
+	
 .navserv li,.navsite li{
 	display:inline;
 	top:0;
